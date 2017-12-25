@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/signup_back1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/applogo" />
+
+
+            <RelativeLayout
+                android:id="@+id/midSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appLogo"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp"
+                android:alpha=".6"
+                android:background="@drawable/sign_out_input_background"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/signUpLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sign Up"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/signUp_inpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signUpLogo"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/sign_out_input_background"
+                    android:drawableRight="@drawable/ic_action_user"
+                    android:hint="Enter username"
+                    android:padding="10dp"
+                    android:textColorHint="#000" />
+
+
+                <EditText
+                    android:id="@+id/signUp_inpPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signUp_inpText"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/sign_out_input_background"
+                    android:drawableRight="@drawable/ic_action_password"
+                    android:hint="Enter password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColorHint="#000" />
+
+                <EditText
+                    android:id="@+id/imageUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signUp_inpPassword"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/sign_out_input_background"
+                    android:drawableRight="@drawable/ic_action_img"
+                    android:hint="Enter image URL"
+                    android:padding="10dp"
+                    android:textColorHint="#000" />
+
+                <Button
+                    android:id="@+id/SignUpButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageUrl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Submit" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/loginaskText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midSign"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="All ready have an account?" />
+
+            <TextView
+                android:id="@+id/LoginActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midSign"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/loginaskText"
+                android:text="Log In"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
